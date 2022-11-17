@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Registration is successfull
+{% endblock title %}
+
+{% block content %}
+<!-- Should add extra guidance here-->
+
+<div class="row front">
+    <div class="mx-auto extra-pad-top">
+        {% with messages=get_flashed_messages() %}
+        {% if messages %}
+        <ul class="alert alert-success">
+            {% for message in messages %}
+            <li>{{message}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+</div>
+
+<div class="row front">
+    <div class="mx-auto extra-pad-top">        
+
+        <!-- Should be implemented as card-->        
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="Information">Selamat, anda telah terdaftar sebagai Non pemakalah {{type}}</p>
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="Information">Informasi</h5>
+                    <p class="card-text">Selanjutnya silahkan bayar ke rekening panitia Seminar Nasional
+                        Bank BNI 9888571793631919
+                        a/n SNM VIII FMIPA 2019 </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Total Tagihan: {{cost}}</li>
+                    <li class="list-group-item">Setelah membayar silahkan konfirmasi ke hotline <a class="black-link" href="tel:0812-9714-2104">0812-9714-2104</a> 
+                    </li>
+                </ul>
+                <div class="card-body">
+                    <a href="{{url_for('submit.profile')}}" class="card-link black-link">View Profile</a>
+                    <a href="{{url_for('submit.logout')}}" class="card-link black-link">Sign Out</a>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock  %}

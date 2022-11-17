@@ -1,0 +1,63 @@
+{% extends "base_fix.html" %}
+
+{% block content %}
+
+<div class="row front">
+    <div class="mx-auto extra-pad-top">
+        {% with messages=get_flashed_messages() %}
+        {% if messages %}
+        <ul class="alert alert-success">
+            {% for message in messages %}
+            <li>{{message}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+</div>
+
+<div class="row front">
+    <div class="mx-auto extra-pad-top">
+        <div id="admin_home" class="row front mx-auto">
+            <!-- Tampilkan Jumlah user terdaftar -->
+            <div class="jumbotron">
+                <h1>Welcome back {{name}}</h1>
+                <p class="lead">Currently registered users: {{nuser}}</p>
+                <hr class="my-4">
+                <table class="table">
+                    <thead class="black white-text">
+                        <th scope="col">Name</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Profession</th>
+                        <th scope="col">Identity </th>
+                    </thead>
+                    <!--Loop here to generate the row-->
+                    <tbody class="black-text">
+                        {% for user in users %}
+                        <tr>
+                            <td>{{user.get('name')}}</td>
+                            <td>{{user.get('institution')}}</td>
+                            <td>{{user.get('email')}}</td>
+                            <td>{{user.get('telephone')}}</td>
+                            <td>{{user.get('profession')}}</td>
+                            <td>
+                                {% if user.get('filename')%}
+                                <a class="btn btn-dark-green btn-sm " href="{{url_for('submit.download', filename=user.get('filename'))}}">id card
+                                </a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <hr class="my-4">                
+                <a href="{{url_for('submit.logout')}}" class="card-link black-link float-right">Sign Out</a>
+            </div>
+            <!-- Tampilkan Jumlah user terdaftar -->
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

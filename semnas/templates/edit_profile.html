@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+	
+{% block title %}
+	Edit Profile
+{% endblock title %}
+
+{% block content %}
+<div class="row front">
+	<div id="registration" class="mx-auto">		
+		{% if error %}
+			<ul class="error alert alert-warning">
+			{% for err in error %}
+				<li>{{err}}</li>
+			{% endfor %}
+			</ul>
+		{% endif %}
+
+		<h1 class="text-center">Edit Profile</h1>
+		<form id = "formRegister" method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<label for="email_label">Email address</label>
+				<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" value={{email}} disabled>
+				
+			</div>
+			<div class="form-group">
+				<label for="name_label">Nama Lengkap</label>
+				<input type="text" class="form-control" name="name" id="name"
+					value={{name}}>						
+			</div>
+			<div class="form-group">
+				<label for="ins_label">Institusi</label>
+				<input type="text" class="form-control" name="institution" id="institution"
+					value={{institution}}>						
+			</div>
+			<div class="form-group">
+				<label for="telp_label">Telephone</label>
+				<input type="tel" class="form-control" name="telephone" id="telephone" pattern="[0-9]*" aria-describedby="telHelp"
+					value={{phone}}>						
+				<small id="telHelp" class="form-text text-muted">Must be number with at least length 6</small>
+			</div>
+			
+			<div class="form-group">
+				<label for="profession_label">Profesi</label>
+				<select class="form-control" name="profession" id="profession">
+					<option>Umum</option>
+					<option>Guru</option>
+					<option>Mahasiswa</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="card_label">Kartu Identitas</label>
+				<input type="file" class="form-control-file" name="id_card" id="id_card" aria-describedby="cardHelp">						
+				<small id="cardHelp" class="form-text text-muted">
+					mahasiswa: KTM, dosen: kartu pegawai, umum: KTP
+				</small>
+			</div>
+			
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#confirmModal">Submit</button>
+		</form>
+
+		<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="confirmModalLabel">Confirmation</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Apakah data ini benar?.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" id="submit" class="btn btn-primary">Save changes</button>					
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock  %}
+
+{% block extra_js %}
+	<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+{% endblock extra_js %}	

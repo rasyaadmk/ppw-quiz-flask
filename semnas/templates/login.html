@@ -1,0 +1,44 @@
+{% extends "base_fix.html" %}
+
+{% block title %}
+	Login
+{% endblock title %}
+{% block content %}	
+
+<div class="row front extra-container">
+	<div id="registration" class="mx-auto">		
+		<!-- Error placeholder-->
+		{% if error %}
+			<ul class="error alert alert-warning">
+			{% for err in error %}
+				<li>{{err}}</li>
+			{% endfor %}
+			</ul>
+		{% endif %}
+		
+		<h1 class="text-center">Non Pemakalah</h1>
+        <form method="POST">
+            <div class="form-group">
+				<label for="email_label">Email address</label>
+				<input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
+					placeholder="Masukkan email">
+				<small id="emailHelp" class="form-text text-muted">Typed according to proper email format.</small>
+			</div>
+            <div class="form-group">
+				<label for="password_label">Password</label>
+				<input type="password" class="form-control" name="pass" id="pass"
+					placeholder="Password">						
+			</div>
+            
+			<button type="submit" class="btn btn-primary btn-block text-uppercase">Sign in</button>
+			<div>
+				<a class="d-block text-center mt-2 small black-link" href="{{url_for('submit.register')}}"> Not registered, click here</a>
+			</div>
+			<div>
+				<a class="d-block text-center mt-2 small black-link" href="http://journal.unj.ac.id/unj/index.php/prosidingsnm/"> Pemakalah, click here</a>
+			</div>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

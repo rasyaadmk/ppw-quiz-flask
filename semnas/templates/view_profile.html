@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Home
+{% endblock title %}
+{% block content %}	
+
+<div class="row front">
+    <div class="mx-auto extra-pad-top">
+        {% with messages=get_flashed_messages() %}
+        {% if messages %}
+        <ul class="alert alert-success">
+            {% for message in messages %}
+            <li>{{message}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+</div>
+
+<div class="row front">
+	<div id="registration" class="mx-auto">				
+		<h1 class="text-center">Profil user</h1>
+        <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <p class="Information">Email</p>
+                    <span class="card-text">{{email}}</span>
+                </div>
+                
+                <div class="card-body">
+                    <h5 class="Information">Nama</h5>
+                    <p class="card-text">{{name}} </p>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="Information">institusi</h5>
+                    <p class="card-text">{{institution}} </p>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="Information">Telephone</h5>
+                    <p class="card-text">{{phone}} </p>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="Information">Profesi</h5>
+                    <p class="card-text">{{profession}} </p>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="Information">Bukti identitas</h5>
+                    <p class="card-text"><a class="btn btn-dark-green" href="{{url_for('submit.download', filename=filename)}}">id card</a></p>
+                </div>
+                
+                <div class="card-body">
+                    <a href="{{url_for('submit.regconf_edit')}}" class="card-link black-link">Edit Profile</a>
+                    <a href="{{url_for('submit.logout')}}" class="card-link black-link">Sign Out</a>
+                </div>
+            </div>
+    </div>
+</div>
+
+{% endblock content %}

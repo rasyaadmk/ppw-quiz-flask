@@ -1,0 +1,904 @@
+{% extends "base.html" %}
+
+{% block title %}
+Seminar Nasional Matematika VIII 2019
+{% endblock title %}
+
+{% block content %}
+</div>
+<div class="view jarallax row overlay-image">
+	<div class="mask rgba-black-light d-flex justify-content-center align-items-end">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 mb-4 white-text text-center">
+					<p class="display-2">Seminar Nasional Matematika VIII 2019</p>
+					<h5 class="font-italic">Sinergi Matematika, Pendidikan Matematika, Ilmu Komputer, dan
+						Statistika untuk Membangun Ketrampilan Abad 21
+					</h5>
+					<!--
+								<h2><small class="text-light">Aula Latif Hendraningrat</small></h2>
+								<h2><small class="text-light">Gedung Dewi Sartika, Lt. 2, Kampus A UNJ</small></h2>
+								<h2><small class="text-light">19 Oktober 2019</small>
+								</h2>
+								-->
+					<table class="table table-responsive table-borderless">
+						<thead>
+							<tr>
+								<th scope="col">
+									<img src="{{ url_for('static', filename='img/logo_dikti.png') }}"
+										class="img-fluid" />
+								</th>
+								<th scope="col">
+									<img src="{{ url_for('static', filename='img/logo_unj.png') }}" class="img-fluid" />
+								</th>
+								<th scope="col">
+									<img src="{{ url_for('static', filename='img/logo_snm.png') }}" class="img-fluid" />
+								</th>
+								<th scope="col">
+									<img src="{{ url_for('static', filename='img/formatif_unindra.png') }}"
+										class="img-fluid" />
+								</th>
+								<th scope="col">
+									<img src="{{ url_for('static', filename='img/jimt.png') }}" class="img-fluid" />
+								</th>
+								<th scope="col">
+									<img src="{{ url_for('static', filename='img/jurnal_stat.png') }}"
+										class="img-fluid" />
+								</th>
+								<th scope="col">
+									<img src="{{ url_for('static', filename='img/medives.png') }}" class="img-fluid" />
+								</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row front">
+		<div class="col-sm-12">
+			<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+				<div class="inner cover">
+					<p id="introduction" class="display-4">Pengantar</p>
+					<p class="lead">Salah satu karakteristik
+						Abad 21 adalah percepatan perkembangan teknologi dan penyebaraan informasi.
+						Oleh karenanya untuk dapat bersaing secara global, Indonesia membutuhkan sumber daya
+						manusia
+						yang handal yang memiliki keterampilan abad 21.
+						Keterampilan abad 21 meliputi keterampilan belajar, keterampilan literasi, dan keterampilan
+						hidup yang diperlukan untuk dapat
+						cepat mengikuti, memanfaatkan, mengembangkan pembaruan teknologi. Fokus di abad 21 ini bukan
+						hanya pada pengetahuan apa
+						yang dimiliki oleh seseorang, melainkan juga apa saja yang dapat ia lakukan dengan
+						pengetahuannya tersebut.
+						Hal ini menjadikan keterampilan abad 21 sebagai fokus penelitian dan kebijakan di banyak
+						negara.
+						Seminar Nasional Matematika VIII bertujuan menjadi forum berbagi pengetahuan tentang
+						keterampilan abad 21
+						khususnya yang terkait dengan kajian ilmu matematika dan pendidikan matematika. </p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<p id="call_for_paper" class="display-3 mx-auto extra-pad-top">Call for Paper</p>
+	</div>
+	<div class="row">
+		<p class="lead mx-auto">Makalah akan diseleksi oleh tim reviewer untuk berkesempatan diterbitkan
+			dalam publikasi berikut ini</p>
+	</div>
+	<div class="row">
+		<p class="lead mx-auto">
+			<a class="btn btn-primary" href="download/semnas_template_full_paper-edited.docx" download>
+				Template paper
+			</a>
+		</p>
+	</div>
+	<div class="row">
+		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel2">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleInterval" data-slide-to="0"></li>
+				<li data-target="#carouselExampleInterval" data-slide-to="1"></li>
+				<li data-target="#carouselExampleInterval" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item img-fluid" data-interval="10000">
+					<img src="{{ url_for('static', filename='img/bg_carousel1.png') }}" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item active img-fluid" data-interval="10000">
+					<img src="{{ url_for('static', filename='img/bg_carousel2.png') }}" class="d-block w-100" alt="...">
+				</div>
+				<div class="carousel-item img-fluid" data-interval="10000">
+					<img src="{{ url_for('static', filename='img/bg_carousel3.png') }}" class="d-block w-100" alt="...">
+				</div>
+
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<h1 id="timeline" class="display-3">Timeline</h1>
+		</div>
+	</div>
+	<div class="row front">
+		<img src="{{ url_for('static', filename='img/timeline.png') }}" class="img-fluid mx-auto" alt="...">
+	</div>
+
+	<div class="row justify-content-md-center extra-pad">
+		<div class="col-md-auto">
+			<p id="invited_speaker" class="display-3">Pembicara Inti</p>
+		</div>
+	</div>
+
+</div>
+<div class="container">
+	<div class="row extra-pad">
+		<div class="col-sm-4">
+			<img src="{{ url_for('static', filename='img/pembicara_1.png') }}" class="img-fluid">
+		</div>
+
+		<div class="col-sm-4">
+			<img src="{{ url_for('static', filename='img/pembicara_2.png') }}" class="img-fluid">
+		</div>
+
+		<div class="col-sm-4">
+			<img src="{{ url_for('static', filename='img/pembicara_3.png') }}" class="img-fluid">
+		</div>
+	</div>
+
+	<div class="row">
+		<p class="lead mx-auto">
+			<a class="btn btn-info" href="download/prof_wj.pptx" download>
+				Robot Automation
+			</a>
+			<a class="btn btn-info" href="download/pembelajaran_abad_21.pdf" download>
+				Pembelajaran Abad 21
+			</a>
+			<a class="btn btn-info" href="download/big_data.pdf" download>
+				Big Data
+			</a>			
+		</p>
+	</div>
+
+</div>
+<div class="container-fluid page-container">
+	<div class="row front">
+		<div id="registration" class="mx-auto">
+			<a class="btn btn-primary mx-auto" href="http://journal.unj.ac.id/unj/index.php/prosidingsnm/"
+				role="button">Pemakalah</a>
+			<a class="btn btn-green mx-auto" href="{{url_for('submit.login')}}" role="button">Non Pemakalah</a>
+		</div>
+	</div>
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col"></th>
+						<th scope="col">Mahasiswa</th>
+						<th scope="col">Guru</th>
+						<th scope="col">Umum</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row">Pemakalah</th>
+						<td>Rp. 200.000,00</td>
+						<td>Rp. 300.000,00</td>
+						<td>Rp. 400.000,00</td>
+					</tr>
+					<tr>
+						<th scope="row">Non Pemakalah</th>
+						<td>Rp. 100.000,00</td>
+						<td>Rp. 150.000,00</td>
+						<td>Rp. 200.000,00</td>
+					</tr>
+					<tr>
+						<td colspan="2">Untuk peserta yang mempresentasikan lebih dari <br /> satu makalah,
+							akan dikenakan biaya tambahan <br />sebesar Rp. 150.000 per makalah</th>
+						<td colspan="2"><b>Pembayaran Biaya Seminar</b><br />
+							Bank BNI 9888571793631919
+							<br /> a/n SNM VIII FMIPA 2019
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row justify-content-md-center extra-pad">
+		<div class="col-md-auto">
+			<p id="susunan_acara" class="display-3">Susunan Acara</p>
+		</div>
+	</div>
+
+	<div class="row justify-content-md-center">
+		<div class="col-md-auto">
+			<h5>Gedung Dewi Sartika Lt. 2, Sabtu, 19 Oktober 2019</h5>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="mx-auto">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">Waktu</th>
+						<th scope="col">Kegiatan</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>07.30 - 08.30</th>
+						<td>Registrasi peserta</td>
+					</tr>
+					<tr>
+						<th>08.00 - 08.15</th>
+						<td>Foto bersama panitia</td>
+					</tr>
+					<tr>
+						<th>08.15 - 08.20</th>
+						<td>Pembukaan</td>
+					</tr>
+					<tr>
+						<th>08.20 - 08.25</th>
+						<td>Menyanyikan lagu Indonesia Raya</td>
+					</tr>
+					<tr>
+						<th>08.25 - 08.30</th>
+						<td>Pembacaan Kalam Ilahi</td>
+					</tr>
+					<tr>
+						<th>08.30 - 08.35</th>
+						<td>Pembacaan Doa</td>
+					</tr>
+					<tr>
+						<th>08.35 - 08.40</th>
+						<td>Laporan Ketua Panitia</td>
+					</tr>
+					<tr>
+						<th>08.40 - 08.55</th>
+						<td>Sambutan Rektor/Dekan sekaligus pembukaan acara</td>
+					</tr>
+					<tr>
+						<th>08.55 - 09.10</th>
+						<td>Pembacaan CV Moderator</td>
+					</tr>
+					<tr>
+						<th rowspan="2">09.10 - 10.10</th>
+						<td>Plennary Speech 1: Prof. Dr.Eng. Wisnu Jatmiko</td>
+					</tr>
+					<tr>
+						<td>Moderator: Med Irzal, M.Kom</td>
+					</tr>
+					<tr>
+						<th rowspan="2">10.10 - 11.10</th>
+						<td>Plennary Speech 2: Ir. Beno Kunto Pradekso, M.Sc</td>
+					</tr>
+					<tr>
+						<td>Moderator: Vera Maya Santi, M.Si</td>
+					</tr>
+					<tr>
+						<th rowspan="2">11.10 - 12.10</th>
+						<td>Plennary Speech 3: Dr. Uwes Anis Chaeruman, M.Pd</td>
+					</tr>
+					<tr>
+						<td>Moderator: Dr. Makmuri, M.Si</td>
+					</tr>
+					<tr>
+						<th>12.10 - 12.15</th>
+						<td>Foto bersama pembicara</td>
+					</tr>
+					<tr>
+						<th>12.15 - 13.15</th>
+						<td>Istirahat makan siang</td>
+					</tr>
+					<tr>
+						<th>13.15 - 15.30</th>
+						<td>Parallel Session</td>
+					</tr>
+					<tr>
+						<th>15.30 - 15.45</th>
+						<td>Coffee Break</td>
+					</tr>
+					<tr>
+						<th>15.45 - 16.00</th>
+						<td>Penutupan dan Pembagian Sertifikat</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<h1 id="parallel_session" class="display-3">Parallel Session</h1>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<h5>Statistika dan Matematika</h5>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 2, Aula Latif H.</th>
+						<td>13.15 - 13.35</td>
+						<td>Metode Naive Bayes dalam Mendeteksi Sel Kanker Payudara</td>
+						<td>Riska Agustin, Vera Maya Santi</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Penentuan Karakteristik Data untuk Analisis Diskriminan Verteks dan Analisis Diskriminan
+							Kernel</td>
+						<td>Yeni Farida, Muhammad Nur Aidi, I Made Sumertajaya</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Pemodelan Status Kemiskinan Penduduk Kota Tangerang Selatan dengan Menggunakan Partial Least
+							Square – Path Modelling</td>
+						<td>Irvana Arofah, Besse Arnawisuda Ningsi</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Magic Square dan Magic Persegipanjang</td>
+						<td>Lukıta Ambarwati</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Penaksiran Premi Asuransi Properti di DKI Jakarta Menggunakan Generalized Linear Model</td>
+						<td>May Syifa Fadlilah</td>
+					</tr>
+					<tr>
+						<td>14.55 – 15.15</td>
+						<td>Optimasi Model Economic Production Quantity untuk Barang Reject dengan Perbaikan yang
+							Berdistribusi Weibull</td>
+						<td>Indriawan Afriliana</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<h5>Matematika dan Ilmu Komputer</h5>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 5, R. 507</th>
+						<td>13.15 - 13.35</td>
+						<td>Metode Denominator Objective Restriction untuk Menyelesaikan Masalah Program Pecahan Linier
+						</td>
+						<td>Miqdad Dzulfathin, Lukita Ambarwati, Med Irzal</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Kajian Sifat Aljabar Max Plus dan Invers Diperumum pada Matriks Bilangan Bulat Modulo 2</td>
+						<td>Andita Sulistyaningrum, Ibnu Hadi</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Karakteristik Ideal Nil Bersih</td>
+						<td>Rahmayanti Andini, Makmuri, Ibnu Hadi</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Penyelesaian Persamaan Diferensial Biasa Menggunakan Metode Extended Runge-Kutta dan Metode
+							Runge-Kutta Merson</td>
+						<td>Irma Rahmayani, Lukita Ambarwati, Aris Hadiyan Wijaksana</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Sistem Monitoring Carbon Dioksigen Budidaya Tanaman Cabai Merah Sistem Areoponik pada Green
+							House</td>
+						<td>Alimuddin, Ria Arafiyah, Dewa Made Subrata, Nurmayulis, Rida Oktarida</td>
+					</tr>
+					<tr>
+						<td>14.55 – 15.15</td>
+						<td>Monitor Otomatis pH Air untuk Tambak Udang Berbasis Website</td>
+						<td>Anggraeni Damayanti, Ria Lestari Simamora, Muhammad Eka Suryana</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="row front">
+		<div class="mx-auto">
+			<h5>Ilmu Komputer</h5>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 5, R. 508</th>
+						<td>13.15 - 13.35</td>
+						<td>Penerapan Serangan Linier pada Enkripsi Lengkap Algoritme SIT-64</td>
+						<td>Aghisa Laelatu Zuhriyah, Yeni Farida</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Pengembangan Sistem Informasi Tracer Study Program Studi Ilmu Komputer FMIPA Universitas
+							Negeri Jakarta</td>
+						<td>Saulia Karina</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Perbaikan Peluang Second Preimage Attack pada Skema CBC-Like MAC</td>
+						<td>Muhammad Ridwan, Andriani Adi Lestari</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Analysis of Software Models Abstract Algebra Based on OSP (Open Source Program)</td>
+						<td>Ngarap Im Manik</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Perancangan Aplikasi Sistem Informasi Manajemen Program Kerja Opmawa FMIPA Universitas
+							Negeri Jakarta</td>
+						<td>Maulana Rahman Nur</td>
+					</tr>
+					<tr>
+						<td>14.55 – 15.15</td>
+						<td>Perancangan Sistem Informasi Taman Bacaan Masyarakat Berbasis Website</td>
+						<td>Hidayatul Rizkiyanti</td>
+					</tr>
+					<tr>
+						<td>15.15 – 15.35</td>
+						<td>Sistem Monitoring Carbon Dioksigen Budidaya Tanaman Cabai Merah Sistem Areoponik pada Green
+							House</td>
+						<td>Alimuddin, Ria Arafiyah, Dewa Made Subrata, Nurmayulis, Rida Oktarida</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<h5>Pendidikan Matematika</h5>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 5, R. 513</th>
+						<td>13.15 - 13.35</td>
+						<td>Upaya Meningkatkan Kemampuan Komunikasi Matematis Siswa dengan Menerapkan Model Pembelajaran
+							CORE pada Pokok Bahasan Aritmetika Sosial di Kelas VII-B SMP Negeri 28 Jakarta</td>
+						<td>Irma Rachmah Hidayah</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Pengaruh Model Pembelajaran Situation-Based Learning Terhadap Kemampuan Representasi
+							Matematis Siswa SMP Negeri 5 Jakarta</td>
+						<td>Peggy Alfianti Pratiwi</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Pengaruh Model Pembelajaran Kooperatif Tipe Team Assisted Individualization (TAI) Berbantuan
+							Wingeom Terhadap Kemampuan Pemecahan Masalah Matematis Siswa SMP Negeri 90 Jakarta</td>
+						<td>Dita Aprilia Wardani, Tri Murdiyanto, Meiliasari</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Pengaruh Pendekatan CRA (Concrete Representational Abstract) Berbantu Alat Peraga Bangun
+							Ruang terhadap Kemampuan Analogi Matematis</td>
+						<td>Lusi Suqilma Anggun Cahyati, Tian Abdul Aziz, Yunda Kurniawan</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Terhadap Kemampuan Pemahaman Konsep Matematis Siswa SMAN 4 Bekasi</td>
+						<td>Kezia Margareth Ntjalama, Tri Murdiyanto, Meiliasari</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 5, R. 612</th>
+						<td>13.15 - 13.35</td>
+						<td>Upaya Meningkatkan Pemahaman Konsep Matematis Siswa Melalui Model Pembelajaran Course Review
+							Horay (CRH) pada Materi Aritmetika Sosial di Kelas VII G SMP Negeri 7 Jakarta</td>
+						<td>Ayu Nur Prajanti</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Efforts to Improve Students' Mathematical Representation Ability through the Implementation
+							of Guided Note Taking (GNT) Learning Method with GeoGebra Assistance on Geometry
+							Transformation Material in Class XI-TEDK 2 26 Jakarta VHS</td>
+						<td>Juliana Veva Rahmawati</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>The Effect of Instruction Model Mood, Understand, Recall, Detect, Elaborate, Review (MURDER)
+							toward Students’ Mathematical Communication Skill of State Junior High School 37 Bekasi’s
+							Students</td>
+						<td>Wafiqotul Adibah MS</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Peningkatan Kemampuan Pemecahan Masalah Matematika Melalui Model Pembelajaran Berbasis HOTS
+						</td>
+						<td>Erna Sari Agusta</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Pengaruh Model Pembelajaran Learning Cycle 7E Berbantuan ICT Terhadap Kemampuan Pemecahan
+							Masalah Matematis Siswa di SMP Negeri 90 Jakarta</td>
+						<td>Noviantika, Wardani Rahayu, Meiliasari</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 5, R. 613</th>
+						<td>13.15 - 13.35</td>
+						<td>Prosedur Newmann untuk Mengidentifikasi dan Menganalisis Kesalahan Siswa dalam Menyelesaikan
+							Soal Aritmatika Sosial</td>
+						<td>Retno Ayu Anggraeni, Tian Abdul Aziz</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Pengaruh Model Pembelajaran Core Berbasis Blended Learning Berbantuan Google Classroom
+							Terhadap Kemampuan Pemahaman Konsep Matematis Siswa di SMP Negeri 243 Jakarta</td>
+						<td>Nurlita Arsy Hasna Alifa, Ellis Salsabila, Mimi Nur Hajizah</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Pengaruh Model Pembelajaran Kooperatif Tipe Probing Prompting Berbantuan LKS Terstruktur
+							Terhadap Kemampuan Pemecahan Masalah Matematis Siswa SMA Negeri 31 Jakarta</td>
+						<td>Nurul Thaniya</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Penumbuhan Kesadaran Perdamaian Siswa SMA di Abad 21 Melalui Matematika</td>
+						<td>Teguh Slamet Wahyudi</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Pengaruh Model Pembelajaran Kooperatif Tipe Student Team Achievement Divisions (STAD)
+							Berbasis Mind Mapping Terhadap Kemampuan Pemahaman Konsep Matematis Peserta Didik di SMP
+							Negeri 232 Jakarta</td>
+						<td>Eka Yunita Rahayu, Swida Purwanto, Meiliasari</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="row front">
+			<div class="mx-auto">
+				<table class="table table-stripe">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Ruang </th>
+							<th scope="col">Waktu</th>
+							<th scope="col">Abstrak</th>
+							<th scope="col">Penulis</th>
+						</tr>
+					</thead>
+					<tbody class="tblack">
+						<tr>
+							<th scope="row" rowspan="6">GDS Lt. 6, R. 607</th>
+							<td>13.15 - 13.35</td>
+							<td>Pengaruh Model Pembelajaran Creative Problem Solving dengan Teknik Scaffolding terhadap
+								Kemampuan Pemecahan Masalah Matematis Siswa di SMA Negeri 12 Jakarta</td>
+							<td>Rosselyne</td>
+						</tr>
+						<tr>
+							<td>13.35 - 13.55</td>
+							<td>Pengaruh Pendekatan PMRI dengan Model Pembelajaran Probing Prompting Terhadap Kemampuan
+								Berpikir Kritis Matematis Siswa SMP Negeri 3 Cibinong</td>
+							<td>Ritma Siti Rahmawati, Pinta Deniyanti S.</td>
+						</tr>
+						<tr>
+							<td>13.55 – 14.15</td>
+							<td>Peningkatan Kemampuan Representasi Matematis melalui Model Pembelajaran Cooperative
+								Integrated Reading and Composition (CIRC) pada Materi Statistika di Kelas VIII</td>
+							<td>Bella Almira, Tri Murdiyanto, Puspita Sari</td>
+						</tr>
+						<tr>
+							<td>14.15 – 14.35</td>
+							<td>Profil Gestur Matematis Siswa Berdasarkan Gender dalam Pencapaian Kemampuan Pemecahan
+								Masalah Matematis</td>
+							<td>Naqiya Karima, Ishaq Nuriadin, Supiat</td>
+						</tr>
+						<tr>
+							<td>14.35 – 14.55</td>
+							<td>Pengaruh Penerapan Model Pembelajaran SSCS (Search, Solve, Create, and Share) Terhadap
+								Kemampuan Koneksi Matematis Siswa SMA Negeri 45 Jakarta</td>
+							<td>Orbitha Khaillasiwi, Swida Purwanto, Meiliasari</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 6, R. 608</th>
+						<td>13.15 - 13.35</td>
+						<td>Peningkatan Kemampuan Pemahaman Konsep Matematis Melalui Model Kooperatif Tipe Scramble
+							dengan Pendekatan Kontekstual di Kelas VII</td>
+						<td>Chairunnisa Inayatusufi, Lukman El Hakim, Puspita Sari</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Pengaruh Penerapan Metode IMPROVE Berbantuan Geogebra Terhadap Kemampuan Pemecahan Masalah
+							Matematis Siswa di SMP Negeri 232 Jakarta</td>
+						<td>Hadi Kusuma</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Perbandingan Kemampuan Pemahaman Konsep Matematis Siswa yang Diajar dengan Model
+							Pembelajaran Kooperatif Jigsaw dan Thinking Aloud Pair Problem Solving di SMP Negeri 2
+							Jakarta</td>
+						<td>Wahyu Maızır, Dr. Makmuri, M.Si, Dr.Eti Dwi Wiraningsih, M.Si</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Analisis Etnomatematika dalam Mata Pelajaran Produktif Siswa SMKN 58 Jakarta</td>
+						<td>Bariz Nur Hanifah, Priarti Megawanti</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Pengaruh Pendekatan PMRI dengan Model Eggen Kauchak’s Integrative terhadap Kemampuan
+							Pemahaman Konsep Matematika Siswa SMPN 137 Jakarta</td>
+						<td>Indah Rachmawati, Pinta Deniyanti S., Meiliasari</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 6, R. 614</th>
+						<td>13.15 - 13.35</td>
+						<td>Pengaruh Model Pembelajaran Kooperatif Tipe Think Pair Share Berbantuan Software Wingeom
+							Terhadap Kemampuan Pemecahan Masalah Matematis Siswa di SMP Negeri 172 Jakarta</td>
+						<td>Siska Noviana</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Upaya Meningkatkan Kemampuan Koneksi Matematis Siswa Melalui Model Pembelajaran CORE
+							(Connecting, Organizing, Reflecting, Extending) Berbantuan Mind Mapping pada Siswa Kelas
+							VIII-A
+							SMP Negeri 44 Jakarta</td>
+						<td>Nuraini Oktafiani</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Upaya Meningkatkan Kemampuan Penalaran Matematis Siswa Melalui Model Problem Based Learning
+							pada
+							Materi Aritmetika Sosial di Kelas VII-1 SMPN 176 Jakarta</td>
+						<td>Nurul Abidah, Lukman El Hakim, Dwi Antari Wijayanti</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Pengaruh Pendekatan Matematika Realistik Indonesia (PMRI) Terhadap Kemampuan Koneksi
+							Matematis
+							Siswa Pada Materi Bilangan</td>
+						<td>Intan Ba’ih Rahmadan, Andi Sessu, Ayu Faradillah</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Pengaruh Model Pembelajaran Generatif terhadap Kemampuan Pemecahan Masalah Matematika Siswa
+							di
+							SMA Negeri 101 Jakarta</td>
+						<td>Yuni Septiana</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 10, R. 1013</th>
+						<td>13.15 - 13.35</td>
+						<td>Pengaruh Model Pembelajaran Assure Berbantuan LKS Terstruktur Terhadap Kemampuan Komunikasi
+							Matematis Siswa SMAN 45 Jakarta pada Materi Turunan</td>
+						<td>Olivia Agustiana, Ellis Salsabila, Meiliasari</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Meningkatkan Kemampuan Pemecahan Masalah Matematis Pada Materi Lingkaran Melalui Model
+							Pembelajaran Means Ends Analysis (MEA) pada Peserta Didik Kelas VIII.A SMP Negeri 7 Jakarta
+							Timur</td>
+						<td>Maskanur Rezky</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Pengaruh Model Pembelajaran Kooperatif Tipe Two Stay Two Stray (TSTS) dengan Pendekatan
+							Kontekstual Terhadap Kemampuan Pemahaman Konsep Matematis Siswa di SMP Negeri 169 Jakarta
+						</td>
+						<td>Bunga Adetya Rachmawati, Swida Purwanto, Puspita Sari</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Pengaruh Metode Brainstorming Berbantu Alat Peraga Terhadap Kemampuan Komunikasi Matematis
+							Peserta Didik</td>
+						<td>Syifa Rahmadiana, Wahidin, Hella Jusra</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Upaya Meningkatkan Pemahaman Konsep Matematis Peserta Didik Melalui Model Pembelajaran
+							Kooperatif Tipe NHT Berbantuan Mind Mapping Materi Aritmetika Sosial Kelas VII-9 SMP Negeri
+							103
+							Jakarta</td>
+						<td>Rahmahtina, Lukman El Hakim, Aris Hadiyan Wijaksana</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row front">
+		<div class="mx-auto">
+			<table class="table table-stripe">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Ruang </th>
+						<th scope="col">Waktu</th>
+						<th scope="col">Abstrak</th>
+						<th scope="col">Penulis</th>
+					</tr>
+				</thead>
+				<tbody class="tblack">
+					<tr>
+						<th scope="row" rowspan="6">GDS Lt. 10, R. 1014</th>
+						<td>13.15 - 13.35</td>
+						<td>Respon Mahasiswa Calon Guru Matematika saat Situasi Contingency di dalam Pembelajaran Matematika</td>
+						<td>Meiliasari</td>
+					</tr>
+					<tr>
+						<td>13.35 - 13.55</td>
+						<td>Upaya Meningkatkan Kemampuan Pemahaman Konsep Matematis Peserta Didik dengan Menggunakan Model Pembelajaran Project Based Learning pada Materi Bangun Ruang Sisi Datar Kelas VIII-B di SMP Negeri 232 Jakarta</td>
+						<td>Christine Elliana Veronica, Swida Purwanto, Siti Rohmah Rohimah</td>
+					</tr>
+					<tr>
+						<td>13.55 – 14.15</td>
+						<td>Meningkatkan Pemahaman Konsep Matematis Melalui Pendekatan Kontekstual dengan Model Kooperatif Tipe The Power of Two di Kelas VII
+						</td>
+						<td>Media Zahrah, Tri Murdiyanto, Puspita Sari</td>
+					</tr>
+					<tr>
+						<td>14.15 – 14.35</td>
+						<td>Pengaruh Variansi dan Bobot Skor Kompenen Terhadap Kecocokan Peringkat Skor Komponen dan Skor Komposit Hasil Belajar  Matematika</td>
+						<td>Erni Susiani</td>
+					</tr>
+					<tr>
+						<td>14.35 – 14.55</td>
+						<td>Pengaruh Penerapan Model Pembelajaran Thinking Aloud Pair Problem Solving dengan Pendekatan Saintifik Terhadap Kemampuan Pemecahan Masalah Matematis Siswa di SMP Negeri 231 Jakarta</td>
+						<td>Tri Ameilia Vianti, Lukman El Hakim, Siti Rohmah Rohimah</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+{% endblock content %}
